@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.b个人客户开户申请书 = new System.Windows.Forms.Button();
+            this.b个人业务凭证 = new System.Windows.Forms.Button();
+            this.b开立单位银行结算账户申请书 = new System.Windows.Forms.Button();
+            this.b长江定存 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.b借据 = new System.Windows.Forms.Button();
+            this.b个人客户签约申请书 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,70 +47,57 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // button1
+            // b个人客户开户申请书
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("黑体", 20F);
-            this.button1.Location = new System.Drawing.Point(80, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 78);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "个人结算业务申请书";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.b个人客户开户申请书.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b个人客户开户申请书.Font = new System.Drawing.Font("黑体", 20F);
+            this.b个人客户开户申请书.Location = new System.Drawing.Point(446, 84);
+            this.b个人客户开户申请书.Name = "b个人客户开户申请书";
+            this.b个人客户开户申请书.Size = new System.Drawing.Size(174, 78);
+            this.b个人客户开户申请书.TabIndex = 0;
+            this.b个人客户开户申请书.Text = "个人客户开户申请书";
+            this.b个人客户开户申请书.UseVisualStyleBackColor = true;
+            this.b个人客户开户申请书.Visible = false;
+            this.b个人客户开户申请书.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button2
+            // b个人业务凭证
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("黑体", 20F);
-            this.button2.Location = new System.Drawing.Point(446, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 49);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "个人客户开户申请书";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.b个人业务凭证.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b个人业务凭证.Font = new System.Drawing.Font("黑体", 20F);
+            this.b个人业务凭证.Location = new System.Drawing.Point(80, 168);
+            this.b个人业务凭证.Name = "b个人业务凭证";
+            this.b个人业务凭证.Size = new System.Drawing.Size(103, 54);
+            this.b个人业务凭证.TabIndex = 0;
+            this.b个人业务凭证.Text = "个人业务凭证";
+            this.b个人业务凭证.UseVisualStyleBackColor = true;
+            this.b个人业务凭证.Visible = false;
+            this.b个人业务凭证.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button3
+            // b开立单位银行结算账户申请书
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("黑体", 20F);
-            this.button3.Location = new System.Drawing.Point(80, 168);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 54);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "个人业务凭证";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.b开立单位银行结算账户申请书.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b开立单位银行结算账户申请书.Font = new System.Drawing.Font("黑体", 20F);
+            this.b开立单位银行结算账户申请书.Location = new System.Drawing.Point(459, 168);
+            this.b开立单位银行结算账户申请书.Name = "b开立单位银行结算账户申请书";
+            this.b开立单位银行结算账户申请书.Size = new System.Drawing.Size(150, 73);
+            this.b开立单位银行结算账户申请书.TabIndex = 0;
+            this.b开立单位银行结算账户申请书.Text = "开立单位银行结算账户申请书";
+            this.b开立单位银行结算账户申请书.UseVisualStyleBackColor = true;
+            this.b开立单位银行结算账户申请书.Visible = false;
+            this.b开立单位银行结算账户申请书.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button4
+            // b长江定存
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("黑体", 20F);
-            this.button4.Location = new System.Drawing.Point(459, 168);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 54);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "开立单位银行结算账户申请书";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("黑体", 20F);
-            this.button5.Location = new System.Drawing.Point(296, 143);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 79);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "长江定存确认书";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.b长江定存.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b长江定存.Font = new System.Drawing.Font("黑体", 20F);
+            this.b长江定存.Location = new System.Drawing.Point(296, 143);
+            this.b长江定存.Name = "b长江定存";
+            this.b长江定存.Size = new System.Drawing.Size(109, 79);
+            this.b长江定存.TabIndex = 0;
+            this.b长江定存.Text = "长江定存确认书";
+            this.b长江定存.UseVisualStyleBackColor = true;
+            this.b长江定存.Visible = false;
+            this.b长江定存.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel1
             // 
@@ -142,18 +129,31 @@
             this.panel2.TabIndex = 2;
             this.panel2.DoubleClick += new System.EventHandler(this.panel2_DoubleClick);
             // 
-            // button6
+            // b借据
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("黑体", 20F);
-            this.button6.Location = new System.Drawing.Point(488, 282);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(105, 54);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "贷款凭证";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.b借据.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b借据.Font = new System.Drawing.Font("黑体", 20F);
+            this.b借据.Location = new System.Drawing.Point(488, 282);
+            this.b借据.Name = "b借据";
+            this.b借据.Size = new System.Drawing.Size(105, 54);
+            this.b借据.TabIndex = 0;
+            this.b借据.Text = "借据";
+            this.b借据.UseVisualStyleBackColor = true;
+            this.b借据.Visible = false;
+            this.b借据.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // b个人客户签约申请书
+            // 
+            this.b个人客户签约申请书.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b个人客户签约申请书.Font = new System.Drawing.Font("黑体", 20F);
+            this.b个人客户签约申请书.Location = new System.Drawing.Point(260, 282);
+            this.b个人客户签约申请书.Name = "b个人客户签约申请书";
+            this.b个人客户签约申请书.Size = new System.Drawing.Size(180, 54);
+            this.b个人客户签约申请书.TabIndex = 0;
+            this.b个人客户签约申请书.Text = "个人客户签约申请书";
+            this.b个人客户签约申请书.UseVisualStyleBackColor = true;
+            this.b个人客户签约申请书.Visible = false;
+            this.b个人客户签约申请书.Click += new System.EventHandler(this.button7_Click);
             // 
             // FrmMain
             // 
@@ -163,12 +163,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.b长江定存);
+            this.Controls.Add(this.b个人客户签约申请书);
+            this.Controls.Add(this.b借据);
+            this.Controls.Add(this.b开立单位银行结算账户申请书);
+            this.Controls.Add(this.b个人业务凭证);
+            this.Controls.Add(this.b个人客户开户申请书);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -182,13 +182,13 @@
         #endregion
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button b长江定存;
+        private System.Windows.Forms.Button b开立单位银行结算账户申请书;
+        private System.Windows.Forms.Button b个人业务凭证;
+        private System.Windows.Forms.Button b个人客户开户申请书;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button b借据;
+        private System.Windows.Forms.Button b个人客户签约申请书;
     }
 }

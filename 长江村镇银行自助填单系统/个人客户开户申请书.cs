@@ -770,7 +770,11 @@ namespace 长江村镇银行自助填单系统
         /// <param name="e"></param>
         private async void button3_Click(object sender, EventArgs e)
         {
-            args = await Task.Run(() => ReadArgs.button_Click());
+            try
+            {
+                args = await Task.Run(() => ReadArgs.button_Click());
+            }
+            catch { }
 
             a1.Text = args.Name;
             if (args.Gender == "男") a2.Checked = true;
@@ -818,8 +822,11 @@ namespace 长江村镇银行自助填单系统
         /// <param name="e"></param>
         private async void button4_Click(object sender, EventArgs e)
         {
-            args = await Task.Run(() => ReadArgs.button_Click());
-
+            try
+            {
+                args = await Task.Run(() => ReadArgs.button_Click());
+            }
+            catch { }
             a25.Text = args.Name;
             a26.Checked = true;
             a30.Checked = true;

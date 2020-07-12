@@ -54,9 +54,13 @@ namespace 长江村镇银行自助填单系统
             dr6["Name"] = "个税声明";
             dt.Rows.Add(dr6);
             DataRow dr7 = dt.NewRow();
-            dr6["Id"] = "7";
-            dr6["Name"] = "借据";
+            dr7["Id"] = "7";
+            dr7["Name"] = "借据";
             dt.Rows.Add(dr7);
+            DataRow dr8 = dt.NewRow();
+            dr8["Id"] = "8";
+            dr8["Name"] = "个人客户签约申请书";
+            dt.Rows.Add(dr8);
 
             comboBox1.DataSource = dt;
             comboBox1.ValueMember = "Id";
@@ -182,6 +186,9 @@ namespace 长江村镇银行自助填单系统
                         break;
                     case "7":
                         txt = "print\\jj.dat";
+                        break;
+                    case "8":
+                        txt = "print\\grkhqysqs.dat";
                         break;
                 }
                 if (txt != "0" || txt != null)

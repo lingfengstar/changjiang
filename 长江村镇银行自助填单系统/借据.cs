@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -200,6 +201,18 @@ namespace 长江村镇银行自助填单系统
 
             }
             myp.EndDoc("打印预览");
+        }
+        Com.FirstSolver.CardReader.ReadCardCompletedEventArgs args = new Com.FirstSolver.CardReader.ReadCardCompletedEventArgs();
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                args = await Task.Run(() => ReadArgs.button_Click());
+            }
+            catch { }
+            tjkr.Text = args.Name;
+            tjkrsfzh.Text = args.IDC;
         }
     }
 }

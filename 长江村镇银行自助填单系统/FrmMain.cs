@@ -27,32 +27,42 @@ namespace 长江村镇银行自助填单系统
             //if (mess == "1")
             //{
             //调整按钮大小
-            button1.Visible = true;
-            button2.Visible = true;
-            button3.Visible = true;
-            button4.Visible = true;
-            button5.Visible = true;
-            button6.Visible = true;
+            b个人客户开户申请书.Visible = true;
+            b个人业务凭证.Visible = true;
+            b开立单位银行结算账户申请书.Visible = true;
+            b长江定存.Visible = true;
+            b借据.Visible = true;
+            b个人客户签约申请书.Visible = true;
             pictureBox1.Visible = true;
             int h = this.Height;
             int w = this.Width;
-            button1.Location = new Point(w / 6, 3 * h / 12);
-            button1.Width = w / 6;
-            button1.Height = h / 6;
-            button2.Location = new Point(4 * w / 6, 3 * h / 12);
-            button2.Width = w / 6;
-            button2.Height = h / 6;
-            button3.Location = new Point(w / 6, 8 * h / 12);
-            button3.Width = w / 6;
-            button3.Height = h / 6;
-            button4.Location = new Point(4 * w / 6, 8 * h / 12);
-            button4.Width = w / 6;
-            button4.Height = h / 6;
-            button5.Location = new Point(5 * w / 12, 11 * h / 24);
-            button5.Width = w / 6;
-            button5.Height = h / 6;
-            button6.Location = new Point(w/2,h/12);
-            
+            Point p1 = new Point(w / 6, 3 * h / 12);
+            Point p2 = new Point(5*w/12, 3 * h / 12);
+            Point p3 = new Point(4 * w / 6, 3 * h / 12);
+            Point p4 = new Point(w / 6, 6 * h / 12);
+            Point p5 = new Point(5 * w / 12, 6 * h / 12);
+            Point p6 = new Point(4 * w / 6, 6 * h / 12);
+
+            b个人客户开户申请书.Location = p1;
+            b个人客户开户申请书.Width = w / 6;
+            b个人客户开户申请书.Height = h / 6;
+            b个人业务凭证.Location = p2;
+            b个人业务凭证.Width = w / 6;
+            b个人业务凭证.Height = h / 6;
+            b开立单位银行结算账户申请书.Location = p3;
+            b开立单位银行结算账户申请书.Width = w / 6;
+            b开立单位银行结算账户申请书.Height = h / 6;
+            b长江定存.Location = p4;
+            b长江定存.Width = w / 6;
+            b长江定存.Height = h / 6;
+            b借据.Location =p5;
+            b借据.Width = w / 6;
+            b借据.Height = h / 6;
+            b个人客户签约申请书.Location = p6;
+            b个人客户签约申请书.Width = w / 6;
+            b个人客户签约申请书.Height = h / 6;
+
+
             //LOGO调整
             pictureBox1.Load("logo\\LOGO.png");
             pictureBox1.Height = h / 12;
@@ -82,8 +92,8 @@ namespace 长江村镇银行自助填单系统
         {
             个人客户开户申请书 c = new 个人客户开户申请书();
             c.Show();
-            
-            
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -113,6 +123,12 @@ namespace 长江村镇银行自助填单系统
         private void button6_Click(object sender, EventArgs e)
         {
             借据 c = new 借据();
+            c.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            个人客户签约申请书 c = new 个人客户签约申请书();
             c.Show();
 
         }
