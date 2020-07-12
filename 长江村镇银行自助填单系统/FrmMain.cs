@@ -82,11 +82,7 @@ namespace 长江村镇银行自助填单系统
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            个人结算业务申请书 c = new 个人结算业务申请书();
-            c.Show();
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
