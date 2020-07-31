@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,7 +27,7 @@ namespace 长江村镇银行自助填单系统
         private void je_TextChanged(object sender, EventArgs e)
         {
             try
-                {
+            {
                 if (string.IsNullOrEmpty(je.Text))
                 {
                     tyi.Text = null;
@@ -171,7 +172,7 @@ namespace 长江村镇银行自助填单系统
 
             //小写金额位数
             string aa = je.Text;//小写金额去小数点
-            
+
             aa = aa.Replace(",", "");
             aa = aa.Replace(".", "");
             int le = aa.Length;
@@ -209,10 +210,12 @@ namespace 长江村镇银行自助填单系统
             try
             {
                 args = await Task.Run(() => ReadArgs.button_Click());
+                tjkr.Text = args.Name;
+                tjkrsfzh.Text = args.IDC;
             }
-            catch (Exception ex){ MessageBox.Show(ex.ToString()); }
-            tjkr.Text = args.Name;
-            tjkrsfzh.Text = args.IDC;
+            catch (Exception ex)
+            { errorOut.ErrorLog(ex); }
+
         }
     }
 }

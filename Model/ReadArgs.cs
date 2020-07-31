@@ -19,14 +19,13 @@ namespace Model
         {
             args = arg;
         }
-        static public async Task< Com.FirstSolver.CardReader.ReadCardCompletedEventArgs> button_Click()
+        static public async Task<Com.FirstSolver.CardReader.ReadCardCompletedEventArgs> button_Click()
         {
             //args = null;
             Com.FirstSolver.CardReader.YAReader reader = new Com.FirstSolver.CardReader.YAReader();
             reader.OnReadCardCompleted += AddKehu;
-
             await Task.Run(() => reader.Start());
             return args;
         }
-        }
+    }
 }
