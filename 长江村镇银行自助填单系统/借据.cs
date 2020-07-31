@@ -210,7 +210,7 @@ namespace 长江村镇银行自助填单系统
             {
                 args = await Task.Run(() => ReadArgs.button_Click());
             }
-            catch { }
+            catch (Exception ex){ MessageBox.Show(ex.ToString()); }
             tjkr.Text = args.Name;
             tjkrsfzh.Text = args.IDC;
         }

@@ -249,6 +249,10 @@
       <Project>{546f9a36-b186-4ea5-84fd-94472ad4a73d}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\配置\配置.csproj">
+      <Project>{1f58e9bd-f497-4233-aa3c-e4512230dd26}</Project>
+      <Name>配置</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
