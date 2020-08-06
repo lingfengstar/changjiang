@@ -1,9 +1,11 @@
-﻿using Model;
+﻿using JianKunKing.Log4NetTest;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -207,15 +209,26 @@ namespace 长江村镇银行自助填单系统
 
         private async void button3_Click(object sender, EventArgs e)
         {
+
             try
             {
-                args = await Task.Run(() => ReadArgs.button_Click());
+                args = await Task.Run(() => ReadArgs.button_Click());                
                 tjkr.Text = args.Name;
                 tjkrsfzh.Text = args.IDC;
             }
             catch (Exception ex)
-            { errorOut.ErrorLog(ex); }
+            {
+                LogisTrac.WriteLog(typeof(借据), ex);
+            }
 
+        }
+        private void writeTXT(string path, string a)
+        {
+            FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+            fs.Position = fs.Length;
+            StreamWriter sw = new StreamWriter(fs);
+            sw.WriteLine(a);
+            sw.Close();
         }
     }
 }

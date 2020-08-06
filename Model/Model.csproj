@@ -34,6 +34,9 @@
     <Reference Include="ComputerInfo">
       <HintPath>..\..\DLL\计算机硬件信息获取\ComputerInfo\ComputerInfo\bin\Debug\ComputerInfo.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>F:\code\log4net-2.0.8\bin\net\4.5\release\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Reg">
       <HintPath>..\..\DLL\注册表操作类\Reg\Reg\bin\Debug\Reg.dll</HintPath>
     </Reference>
@@ -55,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="ConvertMoney.cs" />
-    <Compile Include="errorOut.cs" />
+    <Compile Include="LogisTrac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadArgs.cs" />
     <Compile Include="ReadTxt.cs" />
