@@ -16,9 +16,9 @@ namespace Model
         ///         2：设备为USB接口
         static public string Iport;
         
-        static public bool ReadConfig()
+        static public bool ReadConfig(string path)
         {
-            string[] arr = ReadTxt.ReadTxt.ReadTXT("config.ini");
+            string[] arr = ReadTxt.ReadTxt.ReadTXT(path);
             OrgName = arr[0].Split('=')[1];
             if (!string.IsNullOrEmpty(arr[1].Split('=')[1]))
             {
@@ -33,7 +33,7 @@ namespace Model
 
         }
 
-        static public bool WriteConfig(string[] arr)
+        static public bool WriteConfig(string path,string[] arr)
         {
             string[]config=new string[3];
             config[0] = "OrgName=" + arr[0];
@@ -41,13 +41,14 @@ namespace Model
             config[2] = "Iport=" + arr[2];
             try
             {
-                ReadTxt.ReadTxt.WriteTXT("config.ini", config);
+                ReadTxt.ReadTxt.WriteTXT(path, config);
+                return true;
             }
             catch
             {
 
             }
-            return true;
+            return false;
 
         }
     }

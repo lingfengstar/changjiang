@@ -279,11 +279,12 @@ namespace 长江村镇银行自助填单系统
                 c4.Checked = false;
             }
         }
+        string path1 = $"{Application.StartupPath}\\config.ini";//配置文件路径
 
         private void 长江定存确认书_Load(object sender, EventArgs e)
         {
             //加载行名信息
-            if(Config.ReadConfig())
+            if(Config.ReadConfig(path1))
             {
                 t10.Text = Config.OrgName;
                 t11.Text = Config.OrgName;

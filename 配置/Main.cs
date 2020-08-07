@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JianKunKing.Log4NetTest;
 using Model;
 
 namespace 配置
@@ -23,30 +24,40 @@ namespace 配置
         ///         1：设备为COM接口
         ///         2：设备为USB接口
         string iPort;
-        string path= $"{Application.StartupPath}\\config.ini";//配置文件路径
+        string path = $"{Application.StartupPath}\\config.ini";//配置文件路径
         //string picpath;//LOGO图片路径
         string chname;//村行名称
         string zhname;//支行名称
         private void button2_Click(object sender, EventArgs e)
         {
-            chname = textBox1.Text;
-            zhname = textBox3.Text;
-            string[] arr = { chname, zhname, iPort };
-            
-            if(Config.WriteConfig(arr))
+            try
             {
-                MessageBox.Show("修改配置成功！");
+
+
+                chname = textBox1.Text;
+                zhname = textBox3.Text;
+                string[] arr = { chname, zhname, iPort };
+
+                if (Config.WriteConfig(path, arr))
+                {
+                    MessageBox.Show("修改配置成功！");
+                }
+                else
+                {
+                    MessageBox.Show("请重试！");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                MessageBox.Show("请重试！");
+                LogisTrac.WriteLog(typeof(Main), ex);
+
             }
-            
+
         }
         private void Main_Load(object sender, EventArgs e)
         {
             
-            if(Config.ReadConfig())
+            if(Config.ReadConfig(path))
             {
                 textBox1.Text = Config.OrgName;
                 textBox3.Text = Config.BranchName;
